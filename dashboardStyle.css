@@ -1,0 +1,601 @@
+Body{
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: #FFF8DC;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/* main header body*/
+.header-wrapper{
+    overflow: hidden;
+    height: 70px;
+    top: 0;
+    width: 100vw;
+    padding: 0 30px;
+    background-color: #FFFAFA;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 1;
+    font-size: 15px;
+}
+
+.header-wrapper{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Main logo image*/
+.logo-two{
+    position: absolute;
+    width: auto;
+    width: 100px;
+    height: auto;
+    aspect-ratio: 5 / 4;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70px;
+    cursor: pointer;
+}
+/* Admin dashboard text*/
+.logoadmin{
+    left: 820px;
+    position: relative;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    white-space: nowrap;
+  }
+  
+  /* Burger icon elements*/
+  .icn {
+    left: 500px;
+    height: 30px;
+  }
+  
+  .menuicn {
+    left: -95px; /* original 32 px */
+    position:relative;
+    cursor: pointer;
+  }
+  
+  /* Logo images body*/
+  .logosec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logosec {
+    gap: 60px;
+  }
+  
+/* Profile avatar dropdown*/
+.profile {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 6px;
+    cursor: pointer;
+    left: 260px; /* 290px original */
+    top: 1px;
+}
+
+/* Main dropdown button*/
+.dropBtn:hover {
+    background-color: lightgray;
+}
+
+.dropBtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 18px;
+    font-size: 15px;
+    outline: none;
+}
+
+/* Dropdown icon*/
+.dropBtn i {
+    font-size: 34px;
+    color: black;
+}
+
+/* Dropdown profile contents*/
+.dropdown--contents{
+    display: none; 
+    opacity: 0;
+    padding: 12px 16px;
+    font-size: 18px;
+    margin: auto;
+    position: fixed;
+    right: 13px;
+    top: 75px;
+    height: 145px;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    z-index: 1;
+}
+
+.dropdown--contents li {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    padding: 12px 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.dropdown--contents a {
+    text-decoration: none;
+    color: black;
+}
+.dropdown--contents li:hover {
+    background-color: #ddd;
+}
+
+.show-dropdown{
+    display: flex;
+    opacity: 1;
+}
+
+/* Main create new subject box*/
+.create {
+    top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 10px;
+    background-color: #90EE90;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    margin: 0;
+    left: 880px; /* 980px original */
+    top: 0px;
+    border-radius: 10px;
+    border: 3px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+.create a {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+}
+/* Create new subject icon*/
+.create i{
+    font-size: 16px;
+    font-weight: 500px;
+    margin-right: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px 0;
+    margin-right: 8px;
+}
+
+.create:hover {
+    background-color: rgba(169, 228, 169, 0.9);
+}
+
+/* Main sidebar navigation*/
+.nav-options{
+    position: sticky;
+    flex-direction: column;
+    display: flex;
+    margin-top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    font-size: 20px;
+    min-height: 100vh;
+    padding: 0 1.7rem;
+    background-color: #90EE90;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+.navclose {
+    width: 240px;
+    overflow:hidden;
+    transition: 0.5s ease;
+}
+
+/* Sidebar navi options*/
+.options{
+    font-size: 18px;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.options li {
+    cursor: pointer;
+    gap: 20px;
+    font-size: solid 20px;
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    flex-grow: 1;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease-in-out;
+}
+
+.options li:hover {
+    background: white;
+}
+
+.options a {
+    font-size: solid 20px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+ 
+.options a span {
+    overflow: hidden;
+}
+.options a i{
+    font-size: 24px;
+}
+
+/* Main body content*/
+/* Background card for courses*/
+.bg-card {
+    background-color: white;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: auto;
+    margin-top: 100px;
+    padding-top: -10px;
+    gap: 20px;
+    min-height: 700px;
+    width: 1300px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+/* Delete page for admin option */
+.bx.bx-dots-vertical-rounded{
+    background-color: rgba(0, 0, 0, 0.342);
+    top: 25px;
+    cursor: pointer;
+    color: white;
+    right: 10px;
+    position: absolute;
+    font-size: 30px;
+}
+
+.editpage{
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    right: 50px;
+    top: 25px;
+    width: 100px;
+    height: 20px;
+    background-color: white;
+}
+
+.editpage2{
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    right: 50px;
+    top: 25px;
+    width: 100px;
+    height: 20px;
+    background-color: white;
+}
+
+.editpage3{
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    right: 50px;
+    top: 25px;
+    width: 100px;
+    height: 20px;
+    background-color: white;
+}
+
+.editpage:hover {
+    background-color: #ddd;
+}
+
+.editpage2:hover {
+    background-color: #ddd;
+}
+
+.editpage3:hover {
+    background-color: #ddd;
+}
+
+.show-editpage{
+    opacity: 1;
+}
+
+
+
+.main-body{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 10px;
+    margin-left: 34px;
+    gap: 14px;
+    padding: 2rem;
+    padding-bottom: 370px;
+    border-radius: 10px;
+}
+
+.course-box {
+    text-align: center;
+    background-color:#FFFAFA; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    margin-right: 7px;
+    border-color: black;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    border: 2px solid black;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-box a{
+    text-decoration: none;
+    color: black;
+    background: none;
+    height: 150px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    background: none;
+    font-size: 13px;
+}
+
+.course-title {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+.line {
+
+}
+
+.course-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .header-wrapper {
+        padding: 0 10px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-wrapper {
+        padding: 0 10px;
+        font-size: 11px;
+    }
+    .logo-two {
+        width: 90px;
+        height: auto;
+        left: 5px;
+    }
+    .logo a {
+        font-size: 25px;
+        left: 5px;
+    }
+    .create {
+        left: auto;
+        right: 5px;
+    }
+    .create a i {
+        font-size: 12px;
+    }
+    .profile {
+        left: auto;
+        right: 5px;
+    }
+    .dropdown--contents {
+        min-width: 140px;
+    }
+    .dropdown--contents li {
+        font-size: 15px;
+    }
+    .bg-card {
+        margin-left: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 10px;
+    }
+    .main-body {
+        padding: 0.5rem;
+    }
+    .nav-options {
+        gap: 25px;
+        min-width: 40px;
+    }
+    .options {
+        font-size: 14px;
+    }
+    .options li {
+        padding: 0.3rem;
+        font-size: 14px;
+    }
+    .options a {
+        font-size: 14px;
+    }
+    .course-box {
+        min-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .header-wrapper {
+        padding: 0 5px;
+        font-size: 10px;
+    }
+    .logo-two {
+        width: 80px;
+        height: auto;
+        left: 5px;
+    }
+    .logo a {
+        font-size: 20px;
+        left: 0;
+    }
+    .create {
+        left: 10px;
+        right: 0;
+    }
+    .create a i {
+        font-size: 10px;
+    }
+    .profile {
+        left: 10px;
+        right: 0;
+    }
+    .dropdown--contents {
+        min-width: 120px;
+    }
+    .dropdown--contents li {
+        font-size: 14px;
+    }
+    .bg-card {
+        margin-left: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 1px;
+    }
+    .main-body {
+        padding: 0.8rem;
+    }
+    .nav-options {
+        gap: 30px;
+        min-width: 50px;
+    }
+    .options {
+        font-size: 15px;
+    }
+    .options li {
+        padding: 0.4 rem;
+        font-size: 15px;
+    }
+    .options a {
+        font-size: 15px;
+    }
+    .course-box {
+        min-width: 50%;
+    }
+}
+
+/*
+@media screen and (max-width: 950px) {
+    .profile {
+        width: 100%;
+        right: 0;
+    }
+    .dropBtn {
+        width: 100%;
+        right: 0;
+    }
+    .dropdown--contents {
+        width: 100%;
+        right: 0;
+    }
+    .create {
+        width: 100%;
+        right: 0;
+    }
+
+
+}
+/*
+@media screen and (max-width: 850px) {
+    .options {
+        width: 100vw;
+        position: absolute;
+        transition: all 0.6s ease-in-out;
+        top: 0;
+        left: -100vw;
+    }
+    .navi {
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .logosec {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .logo a .logo-two{
+        font-size: 20px;
+      }
+      .menuicn {
+        height: 25px;
+      }
+      .nav-options {
+        gap: 25px;
+      }
+}
+
+ /*@media screen and (max-width :600px){
+     .container{
+        max-width: 90%;
+     }
+    .form{
+        padding: 20px 10px;
+    }
+    .form.field-login{
+        padding: 20px 10px;
+    }
+}

@@ -1,0 +1,440 @@
+Body{
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: #FFF8DC;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.header-wrapper{
+    overflow: hidden;
+    height: 70px;
+    top: 0;
+    width: 100vw;
+    padding: 0 30px;
+    background-color: #FFFAFA;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 1;
+    font-size: 15px;
+}
+
+
+.header-wrapper{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-two{
+    position: absolute;
+    width: auto;
+    width: 100px;
+    height: auto;
+    aspect-ratio: 5 / 4;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70px;
+    cursor: pointer;
+}
+
+.logoadmin{
+    left: 820px;
+    position: relative;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    white-space: nowrap;
+  }
+  
+  .icn {
+    left: 500px;
+    height: 30px;
+  }
+  
+  .menuicn {
+    left: -95px; /* original 32 px */
+    position:relative;
+    cursor: pointer;
+  }
+  
+  .logosec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .logosec {
+    gap: 60px;
+  }
+  
+
+  .profile {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 6px;
+    cursor: pointer;
+    left: 260px; /* 290px original */
+    top: 1px;
+  }
+
+
+.dropBtn:hover {
+    background-color: lightgray;
+}
+.dropBtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 18px;
+    font-size: 15px;
+    outline: none;
+}
+
+.dropBtn i {
+    font-size: 34px;
+    color: black;
+}
+
+.dropdown--contents{
+    display: none;
+    opacity: 0;
+    padding: 12px 16px;
+    font-size: 18px;
+    margin: auto;
+    position: fixed;
+    right: 13px;
+    top: 75px;
+    height: 145px;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+}
+
+.dropdown--contents li {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    padding: 12px 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.dropdown--contents a {
+    text-decoration: none;
+    color: black;
+}
+.dropdown--contents li:hover {
+    background-color: #ddd;
+}
+
+.show-dropdown{
+    display: flex;
+    opacity: 1;
+}
+
+.create {
+    top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 10px;
+    background-color: #90EE90;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    margin: 0;
+    left: 880px; /* 980px original */
+    top: 0px;
+    border-radius: 10px;
+    border: 3px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+.create a {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+}
+
+.create i{
+    font-size: 16px;
+    font-weight: 500px;
+    margin-right: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px 0;
+    margin-right: 8px;
+}
+
+.create:hover {
+    background-color: rgba(169, 228, 169, 0.9);
+}
+
+
+.nav-options{
+    position: sticky;
+    flex-direction: column;
+    display: flex;
+    margin-top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    font-size: 20px;
+    min-height: 91vh;
+    padding: 0 1.7rem;
+    background-color: #90EE90;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    
+}
+
+.navclose {
+    width: 240px;
+    overflow:hidden;
+    transition: 0.5s ease;
+}
+
+.options{
+    font-size: 18px;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.options li {
+    cursor: pointer;
+    gap: 20px;
+    font-size: solid 20px;
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    flex-grow: 1;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease-in-out;
+}
+
+.options li:hover {
+    background: white;
+}
+
+.options a {
+    font-size: solid 20px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+ 
+.options a span {
+    overflow: hidden;
+}
+.options a i{
+    font-size: 24px;
+}
+
+.container{
+    position: relative;
+    margin: 0;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    /*grid-template-rows: repeat(2, minmax(250px,1fr)); */
+    row-gap: 0;
+}
+
+
+.bg-card {
+    background-color: white;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    flex-wrap: wrap;
+    position: relative;
+    display: grid;
+    padding: 2rem;
+    margin-top: auto;
+    padding-top: 10px;
+    min-height: 100px;
+    min-width: 650px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-card--2 {
+    background-color: white;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    flex-wrap: wrap;
+    display: grid;
+    padding: 2rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    min-height: 100px;
+    min-width: 650px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-card--3 {
+    background-color: white;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    flex-wrap: wrap;
+    display: grid;
+    padding: 1rem;
+    margin-top: -110px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    min-height: 100px;
+    min-width: 650px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.create-input{
+    align-items: center;
+    justify-content: center;
+}
+
+.create-input span{
+    font-size: 20px;
+    font-family: Verdana;
+   
+}
+
+
+.create-input input {
+    border-radius: 5px;
+    border: 2px solid green;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+    height: 25px;
+    width: 500px;
+}
+.create-input span{
+    padding-top: 14px;
+}
+
+.addImage {
+    display: none;
+}
+
+.insert-file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 21px;
+    width: 500px;
+    height: 200px;
+    border: 2px dashed green;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: -25px;
+    text-align: center;
+}
+
+.insert-here i{
+    background-size: cover;
+    font-size: 40px;
+    margin-top: 5px;
+}
+.title-1{
+    position: absolute;
+    white-space: nowrap;
+    font-size: 30px;
+    right: 460px;
+    bottom: 370px;
+}
+
+.title-2{
+    position: absolute;
+    right: 580px;
+    font-size: 30px;
+    bottom: 360px;
+}
+
+.title-3{
+    position: relative;
+    top: -25px;
+}
+
+.clearBtn {
+    cursor: pointer;
+    align-items: center;
+    margin-left: 18px;
+    height: 50px;
+    width: 70px;
+}
+
+.createBtn {
+    position: absolute;
+    justify-items: center;
+    cursor: pointer;
+    background-color: #90EE90;
+    border: none;
+    font-size: 18px;
+    height: 60px;
+    width: 120px;
+    top: 770px;
+    left: 593px;
+}
+
+.createBtn:hover {
+    background-color: rgba(169, 228, 169, 0.9);
+}
+
+.resetBtn {
+    border: none;
+    position: absolute;
+    justify-items: center;
+    cursor: pointer;
+    background-color: #A9A9A9;
+    font-size: 18px;
+    height: 60px;
+    width: 120px;
+    top: 770px;
+    left: 4px;
+}
+
+.resetBtn:hover {
+    /* background-color: rgba(169, 228, 169, 0.9); */
+    background-color: rgba(169, 228, 169, 0.9);
+}

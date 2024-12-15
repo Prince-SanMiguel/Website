@@ -1,0 +1,333 @@
+Body{
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: #FFF8DC;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/* main header body*/
+.header-wrapper{
+    overflow: hidden;
+    height: 70px;
+    top: 0;
+    width: 100vw;
+    padding: 0 30px;
+    background-color: #FFFAFA;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 1;
+    font-size: 15px;
+}
+
+.header-wrapper{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Main logo image*/
+.logo-two{
+    position: absolute;
+    width: auto;
+    width: 100px;
+    height: auto;
+    aspect-ratio: 5 / 4;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70px;
+    cursor: pointer;
+}
+/* Admin dashboard text*/
+.logoadmin{
+    left: 820px;
+    position: relative;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    white-space: nowrap;
+  }
+  
+  /* Burger icon elements*/
+  .icn {
+    left: 500px;
+    height: 30px;
+  }
+  
+  .menuicn {
+    left: -95px; /* original 32 px */
+    position:relative;
+    cursor: pointer;
+  }
+  
+  /* Logo images body*/
+  .logosec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logosec {
+    gap: 60px;
+  }
+  
+/* Profile avatar dropdown*/
+.profile {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 6px;
+    cursor: pointer;
+    left: 400px; /* 290px original */
+    top: 1px;
+}
+
+/* Main dropdown button*/
+.dropBtn:hover {
+    background-color: lightgray;
+}
+
+.dropBtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 18px;
+    font-size: 15px;
+    outline: none;
+}
+
+/* Dropdown icon*/
+.dropBtn i {
+    font-size: 34px;
+    color: black;
+}
+
+/* Dropdown profile contents*/
+.dropdown--contents{
+    display: none; 
+    opacity: 0;
+    padding: 12px 16px;
+    font-size: 18px;
+    margin: auto;
+    position: fixed;
+    right: 13px;
+    top: 75px;
+    height: 145px;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    z-index: 1;
+}
+
+.dropdown--contents li {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    padding: 12px 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.dropdown--contents a {
+    text-decoration: none;
+    color: black;
+}
+.dropdown--contents li:hover {
+    background-color: #ddd;
+}
+
+.show-dropdown{
+    display: flex;
+    opacity: 1;
+}
+
+/* Main create new subject box*/
+.create {
+    top: auto;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 10px;
+    background-color: #90EE90;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    margin: 0;
+    left: 880px; /* 980px original */
+    top: 0px;
+    border-radius: 10px;
+    border: 3px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+.create a {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+}
+/* Create new subject icon*/
+.create i{
+    font-size: 16px;
+    font-weight: 500px;
+    margin-right: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px 0;
+    margin-right: 8px;
+}
+
+.create:hover {
+    background-color: rgba(169, 228, 169, 0.9);
+}
+
+/* Main sidebar navigation*/
+.nav-options{
+    position: sticky;
+    flex-direction: column;
+    display: flex;
+    margin-top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    font-size: 20px;
+    min-height: 100vh;
+    padding: 0 1.7rem;
+    background-color: #90EE90;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+.navclose {
+    width: 240px;
+    overflow:hidden;
+    transition: 0.5s ease;
+}
+
+/* Sidebar navi options*/
+.options{
+    font-size: 18px;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.options li {
+    cursor: pointer;
+    gap: 20px;
+    font-size: solid 20px;
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    flex-grow: 1;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease-in-out;
+}
+
+.options li:hover {
+    background: white;
+}
+
+.options a {
+    font-size: solid 20px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+ 
+.options a span {
+    overflow: hidden;
+}
+.options a i{
+    font-size: 24px;
+}
+
+.container {
+    margin-top: 100px !important;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 100px;
+    top: 200px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.question {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.submitBtn {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: #0056b3;
+}
+
+.submitBtn {
+    background-color: #28a745;
+    width: 100%;
+}

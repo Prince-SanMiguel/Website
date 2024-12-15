@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" 
+        content = "IE=edge">
+        <meta name = "viewport" 
+        content ="width=device-width,
+        initial-scale=1">
+    <title>Online Examination App</title>
+   
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+    </head>
+    <body>
+      
+        <div class = "header-wrap">
+            <div class = "header-logo">
+                <img src = "https://i.imgur.com/ebXzTeH.png" 
+                class = "headlogo"
+                alt = "Exam Navi Logo">
+            </div>
+            <div class = "header-info">
+                <a href = "index.html">Home</a>
+                <div class = "aboutus">About Us
+                    <i class='bx bx-caret-down'></i>
+                    <div class = "aboutDropdown">
+                        <a href = "about.html">How It All Started</a>
+                        <a href = "about_team.html">The Team</a>
+                    </div>
+                </div>
+                <a href = "contact.html">Contact Us</a>
+                
+            </div>
+            <div class = "mainBtn">
+                <button type = "button" class = "homelogin">Sign In</button>
+                <button type = "button" class = "homeregister">Register</button>
+            </div>
+        </div>
+
+        <div class = "footer">
+            
+        </div>
+        
+        <!-- About Us Contents -->
+        <div class = "about-bg2">
+            <div class = "abt-content2">
+                <h1>Company Email</h1>
+                <hr>
+                <h2 style = "color: yellow;"><b>General Inquiries</b></h2>
+                <ul style = "color: white; list-style: none;">
+                    <li><u>info@onlineexamsystem.com</u> ● For general questions or partnership inquiries. </li>
+                </ul>
+
+                <h2 style = "color: yellow;"><b>Customer Support</b></h2>
+                <ul style = "color: white; list-style: none;">
+                    <li><u>support@onlineexamsystem.com</u> ● For users needing help with their accounts or technical issues.</li>
+                </ul>
+
+                <h2 style = "color: yellow;"><b>Feedback and Suggestions </b></h2>
+                <ul style = "color: white; list-style: none;">
+                    <li><u>feedback@onlineexamsystem.com</u> ● User suggestions and improving the platform. </li>
+
+                </ul>
+                <br>
+                <hr>
+            </div>    
+        </div>
+       
+
+                          <!---Sign-In Form-->
+        <section class = "container-form">
+            <div id = "content">
+            <div id = "login-form" class = "form field-login" hidden>
+                <h1 class = "center-header"> Sign In Your Account </h1>
+                <form action = "dashboard.html">
+                    <div class = "field input">
+                        <label> <b> Email ID: </b></label>
+                        <input type = "Email" id = "Email" placeholder = "Enter Email Address"
+                         name = "Email" required>
+                    </div>
+
+
+                    <div class = "field input">
+                        <label> <b>Password:</b> </label>
+                        <input type = "Password" id = "Password" placeholder = "Enter Password"
+                        name = "Password" required>
+                    </div>
+
+
+                    <div class = "remember-me">
+                       <b>Remember me</b>
+                        <input type = "checkbox" checked = "checked">
+                    </div>
+                             <!---Buttons -->
+                    <div class = "field button-field">
+                        <button type = "submit" id = "loginbtn"> Login </button>
+                        <button type = "button" class = "cancelbtn">Cancel</button>
+                    </div>
+                </form>
+               
+                            <!---Reset password-->
+                    <div class = "form-link">
+                            <a href = "#" class = "forgotLink"> Forgot password?</a>
+                    </div>
+                    
+                    <div id = "forgotPass-form" class = "forgot-pass" hidden> 
+                            <label> <b> Old Password: </b></label>
+                            <input type = "Password" placeholder = ""
+                             name = "Password" required>
+
+                            <label> <b> Change Password: </b></label>
+                            <input type = "Password" placeholder = ""
+                             name = "Password" required>
+                            
+                            <label> <b> Confirm New Password: </b></label>
+                            <input type = "Password" placeholder = ""
+                             name = "Password" required>
+
+                            <button type = "submit" class = "forgotPassButton"> Create Password </button>
+                            <button type = "button" class = "forgotPassCancel">Cancel</button>
+                    </div>
+
+                            <!---Sign In account shortcut-->
+                    <div class = "account-form">
+                            Don't have an account yet?
+                            <a href="#" class = "signup-link"> Sign-Up Here! </a>
+                    </div>
+                   
+                    <hr class = "line">
+                            <!---Social media integrations-->
+                    <div class = "media-options">
+                            <a href = "#" class = "field facebook">
+                                 <i class='bx bxl-facebook-circle'></i>
+                                 <span> <b>Continue with Facebook</b></span>
+                            </a>
+                    </div>
+       
+                    <div class = "media-options">
+                            <a href ="#" class = "field gmail">
+                                <i class='bx bxl-gmail'></i>
+                                <span> <b>Continue with Gmail</b></span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+    
+                    <!---Sign-Up Form-->
+                <div id = "signup-form" class="form field-signup" hidden>
+                    <div class="form-content">
+                        <h1 class = "center"> Register Account </h1>
+                            <form action = "loginFinal.html">
+                                <div class = "field input-field">
+                                    <label> <b>Email:</b> </label>
+                                    <input type = "email" id = "Email-signup" placeholder = "Enter Email Address"
+                                    name = "Email" required>
+                                </div>
+
+                                <div class = "field input-field">
+                                    <label> <b>Create Password:</b> </label>
+                                    <input type = "Password" placeholder = "Create Password"
+                                    name = "Password" required>
+                                </div>
+
+                                <div class = "field input-password">
+                                    <label> <b>Confirm Password:</b> </label>
+                                    <input type = "Password" id = "confirmPassword" placeholder = "Confirm Password"
+                                    name = "Password" required>
+                                </div>
+
+                                    <!---Button-->
+                                <div class="field button-field">
+                                    <button id = "signupbtn"> Sign-Up </button>
+                                </div>
+                            </form>
+        
+            <hr class = "line">
+                            <!---Social media integrations-->
+            <div class = "media-options">
+                    <a href = "#" class = "field facebook-signup">
+                    <i class='bx bxl-facebook-circle'></i>
+                        <span> Log-In With Facebook</span>
+                </a>
+            </div>
+
+            <div class = "media-options">
+                <a href = "#" class = "field gmail-signup">
+                    <i class='bx bxl-gmail'></i>
+                    <span> Log-In With Gmail</span>
+                </a>
+            </div>
+
+
+            <hr class = "line">
+                        <!---Sign In account shortcut--->
+            <div class = "signup-link">
+                        Already have an account?
+                        <a href = "#" class = "login-link"> Sign-In Here!</a>
+                    
+            </div>
+        </div>
+        </div>
+    </section>
+
+            <script src = "loginpageJS.js"></script>
+            
+    </body>
+</html>

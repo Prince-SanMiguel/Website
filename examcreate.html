@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible"
+    content = "IE=edge">
+    <meta name = "viewport" 
+    content ="width=device-width,
+    initial-scale=1">
+
+    <title>Exam Modification Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="examcreate.css">
+
+</head>
+<body>
+     <!-- Sidebar Navigation -->
+     <div class = "nav-options">
+        <nav class = "navi">
+            <!-- unorder list parent class -->
+            <ul class = "options">
+                <li class = "dBoard">
+                    <a href = "dashboard.html">
+                        <i class='bx bxs-dashboard'></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class = "calendar">
+                    <a href = "#">
+                        <i class='bx bxs-calendar'></i>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li class = "message">
+                    <a href = "#"> 
+                        <i class='bx bx-chat'></i>
+                        <span>Messages</span>
+                    </a>
+                </li>
+                <li class = "grades">
+                    <a href = "#">
+                        <i class='bx bx-list-check'></i>                          
+                        <span>My Exams</span>
+                    </a>
+                </li>
+                <li class = "settings">
+                    <a href = "#">
+                        <i class='bx bx-spreadsheet' ></i>
+                        <span>Grades Summary</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Header Part -->
+    <div class = "header-wrapper">
+        <div class="logosec">
+            <div class="logo">
+                <!-- Main Logo-->
+                <img src ="https://i.imgur.com/ebXzTeH.png"
+                class = "logo-two"
+                title = "Go to dashboard"
+                id = "examlogo"
+                alt = "Exam Navi Logo">
+                <!-- Admin Dashboard Text-->
+                <h1 class ="logoadmin">Admin Dashboard</h1>
+            </div>
+            <!--Menu icon image-->
+            <img src=
+"https://cdn-icons-png.flaticon.com/128/5358/5358649.png"
+            class="icn menuicn" 
+            title = "Menu options"
+            id="menuicn" 
+            alt="menu-icon">
+        </div>
+        
+        <!--Create new subject button-->
+        <div class="create" title = "Create a subject">
+            <a href = "examcreate.html">
+                <i class='bx bx-plus-medical'></i>
+                <span class = "text" title = "Create Exam Page">Create Exam</span>
+        </div>
+
+        <!--Profile Dropdown button-->
+        <div class="profile" title ="Profile Avatar"> 
+            <a href = "#">
+                <button class = "dropBtn">
+                    <i class='bx bx-user-circle'></i>
+                </button>
+            </a>               
+        </div>
+        <div class="dp">
+            <!-- extra div to come up with css -->
+            </div>
+    </div>
+
+    <!--Profile dropdown contents--outside the header divclass -->
+    <div class = "dropdown-options">
+            <ul class = "dropdown--contents" id ="dropContents" >
+                <li class = "edit">
+                        <a href = "#">Edit Profile</a>
+                </li>
+                <li class = "settings">
+                        <a href = "#">Settings</a>
+                </li>
+                <li class = "signout">
+                    <a href = "#"  data-target = "index.html">Sign-out</a>
+                </li>                   
+            </ul>
+    </div>
+
+    <!-- Exam Modifier Elements -->
+    <div class = "container-bg">
+    <form action = "subject.html" id = "examModify">
+        <h1>Modify Exam Questions</h1>
+        <label for = "exam$name" class = "setName">Set Exam Name:</label>
+        <input type = "text" id = "exam$name" required>
+
+        <label for = "instructions" class = "instruction">Examination Instructions:</label>
+        <input type = "text" id = "instructions">
+
+        <div class = "set-questions" id = "setquestion$">
+            <h2>Set Questions</h2>
+            <button type = "button" id = "addButton$" class = "setButton">Add Question</button>
+            <div id = "questions"></div>
+        </div>
+        <button type = "submit" class = "createExamBtn">Create Exam</button>
+    
+    </form>
+    </div>
+
+    
+    <script src = "examcreate.js"></script>
+</body>
+</html>
